@@ -17,10 +17,7 @@ var onSwitchPanel = (panel) => {
 };
 
 var onSubmit = (questionAnswers, target) => {
-  console.log('Form submitted!', questionAnswers);
-  console.log('-----');
-  console.log('For this example, we disabled normal form submission functionality. ');
-  console.log('-----');
+  
   alert('Submitted. Check the console to see the answers!');
   // <Winterfell schema={loginSchema}
   //             disableSubmit={true}
