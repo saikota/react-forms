@@ -22,6 +22,12 @@ var onSubmit = (questionAnswers, target) => {
   console.log('For this example, we disabled normal form submission functionality. ');
   console.log('-----');
   alert('Submitted. Check the console to see the answers!');
+  // <Winterfell schema={loginSchema}
+  //             disableSubmit={true}
+  //             onRender={onRender}
+  //             onUpdate={onUpdate}
+  //             onSwitchPanel={onSwitchPanel}
+  //             onSubmit={onSubmit} />
 };
 
 class App extends Component {
@@ -32,12 +38,8 @@ class App extends Component {
              onSubmit={onSubmit} onUpdate={onUpdate}/>
 
 
-                <Winterfell schema={loginSchema}
-                            disableSubmit={true}
-                            onRender={onRender}
-                            onUpdate={onUpdate}
-                            onSwitchPanel={onSwitchPanel}
-                            onSubmit={onSubmit} />
+
+
       </div>
     );
   }
