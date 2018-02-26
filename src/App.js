@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 var Winterfell = require('winterfell');
 var schema = require('./schema');
+var loginSchema = require('./loginSchema');
 
 var onRender = () => {
   console.log('Great news! Winterfell rendered successfully');
@@ -30,6 +31,13 @@ class App extends Component {
       <Winterfell schema={schema} onRender={onRender}  onSwitchPanel={onSwitchPanel}
              onSubmit={onSubmit} onUpdate={onUpdate}/>
 
+
+                <Winterfell schema={loginSchema}
+                            disableSubmit={true}
+                            onRender={onRender}
+                            onUpdate={onUpdate}
+                            onSwitchPanel={onSwitchPanel}
+                            onSubmit={onSubmit} />
       </div>
     );
   }
