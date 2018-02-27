@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom'
 import './App.css';
 var Winterfell = require('winterfell');
 var schema = require('./schema');
@@ -17,7 +18,7 @@ var onSwitchPanel = (panel) => {
 };
 
 var onSubmit = (questionAnswers, target) => {
-  
+
   alert('Submitted. Check the console to see the answers!');
   // <Winterfell schema={loginSchema}
   //             disableSubmit={true}
